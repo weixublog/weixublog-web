@@ -1,0 +1,21 @@
+
+<header class="common-header fixed noborder" id="git-header-nav" >
+    <div class="ui container">
+        <div class="ui menu">
+            <div class="item gitosc-logo">
+                <a href="/"><span class="ui inline image" height="auto" width="auto" style="color: #ffffff;font-size: 16pt;margin-top: 8px">爱电影</span>
+                </a></div>
+            <div class="right menu userbar" id="git-nav-user-bar">
+
+                <a href="/user/register" class="item">注册
+                </a><a href="/user/login" class="item">登录
+            </a><script>
+                $('.destroy-user-session').click(function() {
+                    $.cookie('access_token', null, { path: '/' });
+                })
+            </script>
+
+            </div>
+        </div>
+    </div>
+</header>
