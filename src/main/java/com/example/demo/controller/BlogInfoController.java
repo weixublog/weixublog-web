@@ -33,4 +33,11 @@ public class BlogInfoController {
         Page<WxBlogInfo> wxBlogInfos = blogInfoService.getBlogInfoList(pageable);
         return wxBlogInfos;
     }
+
+    @ResponseBody
+    @RequestMapping(value = "/getBlogById", method = RequestMethod.GET)
+    public WxBlogInfo getBlogById(Integer blogId) {
+        WxBlogInfo wxBlogInfo = blogInfoService.getBlogById(blogId);
+        return wxBlogInfo;
+    }
 }

@@ -9,6 +9,9 @@
     <mapping class="com.example.demo.entity.WxPoemInfoEntity"/>
     <mapping class="com.example.demo.entity.WxUserInfoEntity"/>
     <mapping class="com.example.demo.entity.WxWebsiteInfoEntity"/>
+    <mapping class="com.sample.WxBlogTag"/>
+    <mapping class="com.example.demo.entity.WxBlogInfo"/>
+    <mapping class="com.example.demo.entity.WxBlogTag"/>
     <!-- <property name="connection.username"/> -->
     <!-- <property name="connection.password"/> -->
 

@@ -1,8 +1,6 @@
 package com.example.demo.repository;
 
-import com.example.demo.entity.WxBlogInfo;
 import com.example.demo.entity.WxPoemInfoEntity;
-import com.example.demo.entity.WxWebsiteInfoEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

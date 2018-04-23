@@ -32,4 +32,7 @@ public class BlogInfoService {
         blogInfoRepository.delete(blogId);
     }
 
+    public WxBlogInfo getBlogById(Integer blogId) {
+        return blogInfoRepository.findOne(blogId);
+    }
 }
