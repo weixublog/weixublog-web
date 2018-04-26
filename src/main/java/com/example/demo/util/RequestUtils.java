@@ -138,7 +138,6 @@ public final class RequestUtils {
         if(!"".equals(param)) {
             getUrl = getUrl + "?" + param;
         }
-        System.out.println(getUrl);
         URL url = new URL(getUrl);
         // 将url 以 open方法返回的urlConnection  连接强转为HttpURLConnection连接  (标识一个url所引用的远程对象连接)
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();// 此时cnnection只是为一个连接对象,待连接中

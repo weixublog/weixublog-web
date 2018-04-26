@@ -1,5 +1,6 @@
 package com.example.demo.helper;
 
+import com.example.demo.util.DataUtils;
 import lombok.Data;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
@@ -12,8 +13,8 @@ import org.springframework.stereotype.Component;
 @Component
 @Data
 public class DataHelper<T> {
-    private  boolean status;
-    private  String messager;
+    private  boolean status = true;
+    private  String message = DataUtils.SUCCESS;
     private  T data;
 
 }

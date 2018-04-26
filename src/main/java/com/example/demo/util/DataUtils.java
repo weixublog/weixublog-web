@@ -9,4 +9,7 @@ package com.example.demo.util;
 public class DataUtils {
     public static final String STATUS_INUSE ="Y";
     public static final String STATUS_NOTINUSE ="N";
+
+    public static final String SUCCESS = "SUCCESS";
+    public static final String FAIL = "FAIL";
 }

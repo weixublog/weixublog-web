@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.entity.WxBlogInfo;
+import com.example.demo.helper.DataHelper;
 import com.example.demo.service.BlogInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -25,6 +26,12 @@ public class BlogInfoController {
     @Autowired
     BlogInfoService blogInfoService;
 
+    /**
+     *
+     * @param page 博客页数
+     * @param size 博客每页显示数
+     * @return
+     */
     @ResponseBody
     @RequestMapping(value = "/getBlogList", method = RequestMethod.GET)
     public Page<WxBlogInfo> getBlogList(@RequestParam(defaultValue = "0", required = false) Integer page,
@@ -34,10 +41,27 @@ public class BlogInfoController {
         return wxBlogInfos;
     }
 
+    /**
+     * 博客ID
+     * @param blogId
+     * @return
+     */
     @ResponseBody
     @RequestMapping(value = "/getBlogById", method = RequestMethod.GET)
     public WxBlogInfo getBlogById(Integer blogId) {
         WxBlogInfo wxBlogInfo = blogInfoService.getBlogById(blogId);
         return wxBlogInfo;
+    }
+
+    /**
+     * 博客ID
+     * @param blogId
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping(value = "/incrBlogVisitedTime", method = RequestMethod.GET)
+    public DataHelper incrBlogVisitedTime(Integer blogId) {
+        DataHelper dataHelper = blogInfoService.incrBlogVisitedTime(blogId);
+        return dataHelper;
     }
 }

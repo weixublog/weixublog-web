@@ -6,13 +6,14 @@
   <session-factory>
     <property name="connection.url">jdbc:mysql://39.108.13.197:3306/WEIXU_BLOG</property>
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-    <mapping class="com.example.demo.entity.WxPoemInfoEntity"/>
+      <mapping class="com.example.demo.entity.WxPoemInfoEntity"/>
     <mapping class="com.example.demo.entity.WxUserInfoEntity"/>
     <mapping class="com.example.demo.entity.WxWebsiteInfoEntity"/>
-    <mapping class="com.sample.WxBlogTag"/>
     <mapping class="com.example.demo.entity.WxBlogInfo"/>
     <mapping class="com.example.demo.entity.WxBlogTag"/>
-    <!-- <property name="connection.username"/> -->
+      <mapping class="com.example.demo.entity.WxVisitedLocation"/>
+      <mapping class="com.example.demo.entity.WxWords"/>
+      <!-- <property name="connection.username"/> -->
     <!-- <property name="connection.password"/> -->
 
     <!-- DB schema will be updated if needed -->
